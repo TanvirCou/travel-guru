@@ -1,0 +1,148 @@
+.login-form {
+    width: 530px;
+    height: 390px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ABABAB;
+    border-radius: 4px;
+    margin-left: 400px;
+    margin-top: -10px;
+}
+div h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+div input {
+    border: 0;
+    border-bottom: 1px solid #C5C5C5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    width: 430px;
+    color: #000000;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.forgot-btn {
+    border: 0;
+    background-color: white;
+    text-decoration: underline;
+    color: #F9A51A;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.booking-login-button{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 430px;
+    height: 50px;
+    background: #F9A51A;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.create-btn {
+    border: 0;
+    background-color: white;
+    text-decoration: underline;
+    color: #F9A51A;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.login-form p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 15px;
+    margin-left: 105px;
+}
+.fb-part{
+    display: flex;
+    background: #FFFFFF;
+    border: 2px solid #C7C7C7;
+    border-radius: 57px;
+    width: 461px;
+    height: 51px;
+    margin-top: 30px;
+    margin-left: 435px;
+}
+.social-part img{
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    margin-top: 3px;
+}
+.social-part p{
+    font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+margin-left: 100px;
+margin-top: 10px;
+
+color: #000000;
+}
+.google-part{
+    display: flex;
+    background: #FFFFFF;
+    border: 2px solid #C7C7C7;
+    border-radius: 57px;
+    width: 461px;
+    height: 51px;
+    margin-left: 435px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.signUp-form{
+    width: 530px;
+    height: 540px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ABABAB;
+    border-radius: 4px;
+    margin-left: 400px;
+    margin-top: -10px;
+}
+.signUp-text{
+    margin-left: 145px;
+    margin-top: 15px;
+}
+
+.hr-lines:before{
+    content:" ";
+    display: block;
+    height: 1px;
+    width: 207px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    background: #ababab;
+  }
+  .hr-lines{
+    position: relative;
+    max-width: 500px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .hr-lines:after{
+    content:" ";
+    height: 1px;
+    width: 192px;
+    background: #ababab;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 45px;
+  }
+

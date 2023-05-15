@@ -1,0 +1,40 @@
+.backgroundImg{
+    background-image: url('../../images/Rectangle\ 1.png');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    clear: both;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.carousel{
+    display: flex;
+}
+.image-area img{
+    width: 200px;
+    height: 350px;
+    margin-left: 20px;
+    margin-top: 50px;
+    border: 5px solid lightgray;
+    border-radius: 20px;
+}
+.text-area{
+    width: 40%;
+    color: white;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+.image-area{
+    margin-left: 50px;
+}
+.focus-image{
+    border: 5px solid orange;
+}
+.booking-btn{
+    width: 150px;
+    background-color: #F9A51A;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding:8px 10px;
+    cursor: pointer;
+}

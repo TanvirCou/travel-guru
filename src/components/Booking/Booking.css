@@ -1,0 +1,79 @@
+.backgroundImg{
+    background-image: url('../../images/Rectangle\ 1.png');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    clear: both;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.form-area{
+    border: 1px solid lightgrey;
+    width: 434px;
+    height: 348px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.origin-part input{
+    width: 382px;
+    height: 43px;
+    background-color: #F2F2F2;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.origin-part{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.destination-part input{
+    width: 382px;
+    height: 43px;
+    background-color: #F2F2F2;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+label{
+    color: #818181;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.destination-part{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.from-part input{
+    width: 180px;
+    height: 43px;
+    background-color: #F2F2F2;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.to-part input{
+    width: 180px;
+    height: 43px;
+    background-color: #F2F2F2;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.date-part{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.to-part{
+    margin-left: 20px;
+}
+.start-booking-btn{
+    background-color: #F9A51A;
+    border-radius: 5px;
+    width: 382px;
+    height: 43px;
+    border: 1px solid lightgrey;
+    margin-top: 10px;
+    margin-left: 10px;
+}
