@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import './Booking.css';
 import Header from '../Header/Header';
+import { useNavigate } from 'react-router-dom';
+import { UserContext } from '../../App';
 
 const Booking = () => {
+   
+    const navigate = useNavigate();   
+    const handleSearchDetails = () => {
+        navigate('/search');
+    }
+
     return (
         <div className='backgroundImg'>
-            <Header></Header>
+            <Header setLoginNameShow={false}></Header>
             <div className='carousel'>
                 <div className='text-area'>
                     <h1>Sajek</h1>
@@ -26,16 +34,16 @@ const Booking = () => {
                         <div className='from-part'>
                             <label htmlFor="from">From</label>
                             <br />
-                            <input type="date" name="from" id="" />
+                            <input type="date" name="fromDate" id="" />
                         </div>
                         <div className='to-part'>
                             <label htmlFor="to">To</label>
                             <br />
-                            <input type="date" name="to" id="" />
+                            <input type="date" name="toDate" id="" />
                         </div>
                     </div>
                     <br />
-                    <button className='start-booking-btn'>Start Booking</button>
+                    <button onClick={handleSearchDetails} className='start-booking-btn'>Start Booking</button>
                 </div>
             </div>
 

@@ -1,9 +1,9 @@
-import React from 'react';
 import Header from '../Header/Header';
 import resort1 from '../../images/Rectangle 26.png';
 import resort2 from '../../images/Rectangle 27.png';
 import resort3 from '../../images/Rectangle 28.png';
 import './Search.css';
+
 
 const Search = () => {
     return (
@@ -19,7 +19,7 @@ const Search = () => {
                             </div>
                             <div className='resort-info'>
                                 <h5>Light bairy airy stylish apt & safe peaceful stay</h5>
-                                <p>4 guests  2 bedrooms   2 bed</p>
+                                <p>4 guests &emsp; 2 bedrooms &emsp; 2 bed</p>
                                 <p>wifi Available</p>
                                 <p>Cancellation flexibility available</p>
                                 <h5>$34/night</h5>
@@ -33,7 +33,7 @@ const Search = () => {
                             </div>
                             <div className='resort-info'>
                                 <h5>Resort Megh</h5>
-                                <p>4 guests  2 bedrooms   2 bed</p>
+                                <p>4 guests &emsp; 2 bedrooms &emsp; 2 bed</p>
                                 <p>wifi Available</p>
                                 <p>Cancellation flexibility available</p>
                                 <h5>$44/night</h5>
@@ -46,7 +46,7 @@ const Search = () => {
                             </div>
                             <div className='resort-info'>
                                 <h5>Ar Lounge & sky view resort</h5>
-                                <p>4 guests  2 bedrooms   2 bed</p>
+                                <p>4 guests &emsp; 2 bedrooms &emsp; 2 bed</p>
                                 <p>wifi Available</p>
                                 <p>Cancellation flexibility available</p>
                                 <h5>$52/night</h5>

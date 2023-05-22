@@ -51,4 +51,7 @@ nav ul .search-bar{
     height: 44px;
     margin-top: -10px;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }

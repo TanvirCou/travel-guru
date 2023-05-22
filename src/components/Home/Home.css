@@ -27,14 +27,17 @@
 .image-area{
     margin-left: 50px;
 }
-.focus-image{
+div .focus-pic{
     border: 5px solid orange;
 }
 .booking-btn{
     width: 150px;
     background-color: #F9A51A;
-    border: 1px solid lightgrey;
+    border: 1px solid lightgray;
     border-radius: 5px;
     padding:8px 10px;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
 }
