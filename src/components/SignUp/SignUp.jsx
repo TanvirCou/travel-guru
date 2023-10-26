@@ -138,9 +138,9 @@ const SignUp = () => {
     };
 
     return (
-        <div>
+        <div className='pt-36'>
             <Navbar></Navbar>
-            <div className='w-full flex justify-center pt-16 pb-8'>
+            <div className='w-full flex justify-center pb-8'>
             <form action="" onSubmit={(e) => handleSubmit(e)} className='p-8 shadow-md rounded xl:w-2/5 lg:w-2/4 md:w-3/5 sm:w-3/4 min-[320px]:w-4/5 border-2'>
             <p className='text-center font-bold text-2xl pb-2'>Create an account</p>
             <div className='mt-6 items-center'>
