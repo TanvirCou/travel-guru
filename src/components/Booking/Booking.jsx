@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import fakeData from '../../fakeData/index';
 import Navbar from '../Navbar/Navbar';
+import './Booking.css';
 
 const Booking = () => {
     const {id} = useParams();
@@ -21,7 +22,11 @@ const Booking = () => {
     }
 
     const handleSubmit = () => {
-
+        navigate(`/destination/${bookingData.id}`,
+            {
+                state: { bookingDetails }
+            }
+        );
     }
     
 
@@ -33,7 +38,7 @@ const Booking = () => {
     return (
         <div className='bgImg'>
             <Navbar></Navbar>
-            <div className='h-screen w-full md:flex relative'>
+            <div className='md:h-screen w-full md:flex relative'>
              <div className='md:w-1/2 w-full text-left lg:py-52 md:py-48 pt-40 lg:px-20 md:px-8 sm:px-32 min-[320px]:px-20'>
                 <p className="text-white text-6xl font-bold pb-5">{bookingData.title}</p>
                 <p className="text-white text-md font-semibold text-left py-6">{bookingData.longDesc}</p>
