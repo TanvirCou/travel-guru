@@ -15,25 +15,32 @@ const setUserToken = () => {
     });
   }
 
-export const handleGoogleSignIn = () => {
+export const handleGoogleSignIn = async() => {
     const provider = new GoogleAuthProvider();
     const auth = getAuth();
-    return signInWithPopup(auth, provider)
+    return await signInWithPopup(auth, provider)
             .then(res => {
-                const { displayName, email } = res.user;
+                const { displayName, email  } = res.user;
                 const signedInUser = {
                     isSignedIn: true,
                     name: displayName,
                     email: email,
                     password: '',
                     success: true,
-                    googleSignIn: true
+                    googleSignIn: true,
+                    error: '',
                 }
                 setUserToken();
                 return signedInUser;
             })
             .catch(err => {
-                // console.log(err);
+                const signedInUser = {
+                    isSignedIn: false,
+                    success: false,
+                    googleSignIn: false,
+                    error: err.message,
+                }
+                return signedInUser;
             });
 }
 
@@ -55,8 +62,6 @@ export const handleGoogleSignOut = () => {
                 // console.log(err.message);
             });
 }
-
-
 
 export const createUserWithEmailAndPass = (name, email, password) => {
     const auth = getAuth();

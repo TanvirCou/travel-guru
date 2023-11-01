@@ -6,7 +6,7 @@ import { UserContext } from '../../App';
 const PrivateRoute = ({children}) => {
     // eslint-disable-next-line no-unused-vars
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    const location = useLocation();   
+    const location = useLocation();
 
     return (localStorage.getItem('token') || loggedInUser.success) ? (children) : 
     <Navigate to='/login' state={{ from: location }} replace></Navigate>;
