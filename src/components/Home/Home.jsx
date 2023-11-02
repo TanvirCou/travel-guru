@@ -14,7 +14,7 @@ const Home = () => {
         <div className='bgImg'>
             <Navbar></Navbar>
             <div>
-                <Carousel autoPlay infiniteLoop interval={8000} showThumbs={false} showStatus={false} transitionTime={2000}>
+                <Carousel autoPlay infiniteLoop interval={8000} swipeable={false} showThumbs={false} showStatus={false} transitionTime={2000}>
                     {
                         fakeData.map(data => <TourIntro key={data.id} data={data}></TourIntro>)
                     }

@@ -38,14 +38,14 @@ const Booking = () => {
     return (
         <div className='bgImg'>
             <Navbar></Navbar>
-            <div className='md:h-screen w-full md:flex relative'>
-                <div className='md:w-1/2 w-full text-left lg:py-52 md:py-48 pt-32 lg:px-20 md:px-8 sm:px-32 min-[320px]:px-20' data-aos="fade-right" data-aos-duration="1500">
-                    <p className="text-white xl:text-6xl lg:text-5xl text-4xl max-md:text-5xl font-bold pb-5">{bookingData.title}</p>
-                    <p className="text-white text-md font-semibold text-left py-6">{bookingData.longDesc}</p>
+            <div className='md:h-screen w-full md:flex relative overflow-x-hidden'>
+                <div className='md:w-1/2 w-full text-left lg:py-52 md:py-48 pt-32 lg:px-20 md:px-8 sm:px-24 min-[320px]:px-12' data-aos="fade-right" data-aos-duration="1500">
+                    <p className="text-white xl:text-6xl lg:text-5xl text-4xl max-md:text-4xl font-bold pb-3">{bookingData.title}</p>
+                    <p className="text-white text-md font-semibold text-left py-6 max-sm:py-4">{bookingData.longDesc}</p>
                 </div>
-                <div className='md:w-1/2 w-full md:py-52 py-10 lg::px-20 md:px-0 sm:px-12 justify-center' >
+                <div className='md:w-1/2 w-full md:py-52 py-10 lg::px-20 md:px-0 sm:px-6 justify-center' >
                     <div className='w-full justify-center flex'>
-                        <form action="" onSubmit={(e) => handleSubmit(e)} className='w-2/3 bg-white rounded py-3 shadow-md' data-aos="fade-left" data-aos-duration="1500">
+                        <form action="" onSubmit={(e) => handleSubmit(e)} className='md:w-2/3 w-4/5  bg-white rounded py-3 shadow-md' data-aos="fade-left" data-aos-duration="1500">
                             <div className='px-4 py-1'>
                                 <label htmlFor="origin" className='text-gray-400 text-sm font-semibold'>Origin</label>
                                 <br />
@@ -60,7 +60,7 @@ const Booking = () => {
                                 <div className='px-4 w-1/2'>
                                     <label htmlFor="from" className='text-gray-400 text-sm font-semibold'>From</label>
                                     <br />
-                                    <input type="date" onBlur={handleBlur} name="from" required className='bg-gray-200 w-full h-10 rounded  px-2 focus:outline-gray-300 focus:border-gray-300' />
+                                    <input type="date" placeholder='select a date' onBlur={handleBlur} name="from" required className='bg-gray-200 w-full h-10 rounded  px-2 focus:outline-gray-300 focus:border-gray-300' />
                                 </div>
                                 <div className='px-4 w-1/2'>
                                     <label htmlFor="to" className='text-gray-400 text-sm font-semibold'>To</label>

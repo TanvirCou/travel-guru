@@ -24,7 +24,7 @@ const Destination = () => {
 
 
     return (
-        <div className='pt-20'>
+        <div className='pt-20 overflow-x-hidden'>
             <Navbar></Navbar>
             <div className='lg:flex w-full xl:px-32 lg:px-12'>
                 <div className='lg:w-3/5 w-full max-lg:justify-center max-lg:flex'>
